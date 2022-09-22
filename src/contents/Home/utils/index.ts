@@ -1,0 +1,1 @@
+export { getChamp } from "./getChamp";
