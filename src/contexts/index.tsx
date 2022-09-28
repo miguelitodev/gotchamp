@@ -6,6 +6,7 @@ interface IContextProvider {
 }
 
 export interface IChampions {
+	id: string;
 	name: string;
 	title: string;
 	image: {
@@ -13,6 +14,7 @@ export interface IChampions {
 	};
 	tags: string[];
 	key: number;
+	blurb: string;
 }
 
 interface IAppContext {
