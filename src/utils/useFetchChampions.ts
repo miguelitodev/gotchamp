@@ -9,10 +9,9 @@ export const useFetchChampions = () => {
 
 	const getChampions = useCallback(
 		async (version: string) =>
-			await api(`/cdn/${version}/data/en_US/champion.json`)
+			await api(`/cdn/${version}/data/pt_BR/champion.json`)
 				.then((response) => {
 					const data: IChampions[] = Object.values(response.data.data);
-					console.log(data);
 					setChampions(data);
 				})
 				.catch((error) => setChampionsError(error))
